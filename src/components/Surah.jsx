@@ -5,7 +5,7 @@ const Surah = () => {
   const [quranData, setQuranData] = useState([]);
   const [selectedSurah, setSelectedSurah] = useState(null);
   const [loading, setLoading] = useState(true);
-  const apiUrl = "http://api.alquran.cloud/v1/quran/quran-uthmani";
+  const apiUrl = "https://api.alquran.cloud/v1/quran/quran-uthmani";
 
   useEffect(() => {
     fetch(apiUrl)
