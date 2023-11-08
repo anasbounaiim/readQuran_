@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'BHamid'; /* Use the same font name as in your CSS class */
+    src: url('../public/BHamid.ttf') format('truetype'); /* Adjust the path as needed */
+
+  }
+@font-face {
+    font-family: 'BHamid1'; /* Use the same font name as in your CSS class */
+    src: url('../public/BHamid1.ttf') format('truetype'); /* Adjust the path as needed */
+
+  }
+@font-face {
+    font-family: 'DTPN3'; /* Use the same font name as in your CSS class */
+    src: url('../public/DTPN3.ttf') ; /* Adjust the path as needed */
+
+  }
+
+/* Add smooth scrolling */
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Scrollbar Styles */
+  /* width */
+  ::-webkit-scrollbar {
+    width: 2px;
+    overflow: hidden;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #c8c8c8;
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
