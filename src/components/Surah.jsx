@@ -36,7 +36,7 @@ const Surah = () => {
     <div className=''>
         <div className='w-full h-screen overflow-hidden'>
             <div className='w-full py-3 flex justify-center bg-[#776B5D] text-center text-4xl font-custom1 font-medium text-[#F3EEEA]'>
-              <img src="../public/Q-icon.png"  className='w-12 ' alt="logo" srcset="" />
+              <img src="../../public/Q-icon.png"  className='w-12 ' alt="logo" srcset="" />
             </div>
 
 
