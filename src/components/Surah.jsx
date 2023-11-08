@@ -57,7 +57,7 @@ const Surah = () => {
               className={` ${selectedSurah === surah.number ? 'bg-[#EBE3D5]  border text-[#776B5D] border-[#776B5D] ' : ''}  hover:bg-[#EBE3D5] hover:text-[#776B5D]  rounded-md p-1 px-5 flex justify-end items-center  cursor-pointer active:bg-[#EBE3D5] `}
               onClick={() => handleSurahClick(surah.number)}
             >
-              <span className="float-right font-custom2 text-xl  py-1 px-2">{surah.name} </span> <span className='font-custom1 text-3xl font-bold' >- {surah.number}</span>
+              <span className={`${ surah.number === 112 ? 'text-lg ' : ''} float-right font-custom2 text-xl  py-1 px-2 `}>{surah.name} </span> <span className='font-custom1 text-3xl font-bold' >- {surah.number}</span>
             </li>
           ))}
         </ul>
