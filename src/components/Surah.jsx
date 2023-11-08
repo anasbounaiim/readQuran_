@@ -49,12 +49,12 @@ const Surah = () => {
     {loading ? (
       <p>Loading...</p>
     ) : (
-      <div className="bg-[#b0a695] w-72 p-4 overflow-y-auto rounded-xl pt-6 ">
+      <div className="bg-[#776B5D] w-72 p-4 overflow-y-auto rounded-xl pt-6 ">
         <ul className="flex flex-col gap-2 text-[#F3EEEA]">
           {quranData.map((surah) => (
             <li
               key={surah.number}
-              className={` ${selectedSurah === surah.number ? 'bg-[#EBE3D5]  border text-[#776B5D] border-[#776B5D] ' : ''}  hover:bg-[#EBE3D5] hover:text-[#776B5D]  rounded-md p-1 px-5 flex justify-end items-center  cursor-pointer active:bg-[#EBE3D5] `}
+              className={` ${selectedSurah === surah.number ? 'bg-[#EBE3D5]  border text-[#776B5D] hover:text-[#776B5D] hover:bg-[#EBE3D5] border-[#b0a695] ' : ''}  hover:bg-[#b0a695] hover:text-[#776B5D]  rounded-md p-1 px-5 flex justify-end items-center  cursor-pointer active:bg-[#EBE3D5] `}
               onClick={() => handleSurahClick(surah.number)}
             >
               <span className={`${ surah.number === 112 ? 'text-lg ' : ''} float-right font-custom2 text-xl  py-1 px-2 `}>{surah.name} </span> <span className='font-custom1 text-3xl font-bold' >- {surah.number}</span>
