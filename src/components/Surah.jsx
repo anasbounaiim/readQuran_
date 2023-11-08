@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import SurahDetail from './surahDetails';
+import Q_icon from '/public/Q-icon.png'
 
 const Surah = () => {
   const [quranData, setQuranData] = useState([]);
@@ -36,7 +37,7 @@ const Surah = () => {
     <div className=''>
         <div className='w-full h-screen overflow-hidden'>
             <div className='w-full py-3 flex justify-center bg-[#776B5D] text-center text-4xl font-custom1 font-medium text-[#F3EEEA]'>
-              <img src="../public/bg-ayats.png"  className='w-12 ' alt="logo" srcset="" />
+              <img src={Q_icon}  className='w-12 ' alt="logo" srcset="" />
             </div>
 
 
