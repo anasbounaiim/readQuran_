@@ -40,7 +40,7 @@ let current_day = `${date}-${month}-${year}`
         <p>Loading prayer timings data...</p>
       ) : (
         <div>
-          <p className='flex justify-center items-center text-[#EBE3D5] font-custom2 p-3 text-3xl '> <span className='font-custom1 m-2 text-4xl'>{apiData.date.hijri.year}</span>  {apiData.date.hijri.month.ar} <span className='font-custom1 m-2 text-4xl'>{apiData.date.gregorian.day}</span>  {apiData.date.hijri.weekday.ar} </p>
+          <p className='flex justify-center items-center text-[#EBE3D5] font-custom2 p-3 text-3xl '> <span className='font-custom1 m-2 text-4xl'>{apiData.date.hijri.year}</span>  {apiData.date.hijri.month.ar} <span className='font-custom1 m-2 text-4xl'>{apiData.date.hijri.day}</span>  {apiData.date.hijri.weekday.ar} </p>
     
           
         </div>
