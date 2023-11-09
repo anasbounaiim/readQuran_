@@ -4,7 +4,14 @@ const PrayerTimings = () => {
   const [apiData, setApiData] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  const apiUrl = `https://api.aladhan.com/v1/timingsByAddress/08-11-2023?address=Rabat,MA&method=8`;
+  const today = new Date();
+  const month = today.getMonth() + 1;
+  const year = today.getFullYear();
+  const date = today.getDate();
+
+let current_day = `${date}-${month}-${year}`
+
+  const apiUrl = `https://api.aladhan.com/v1/timingsByAddress/${current_day}?address=Rabat,MA&method=8`;
 
   useEffect(() => {
     fetch(apiUrl)
