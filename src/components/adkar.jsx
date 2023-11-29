@@ -131,7 +131,7 @@ const PrayerCarousel = () => {
           ) : (
             <div>
             <div className="mt-16 w-[1000px] h-72 bg-[url('../public/bg-ayats.png')] bg-[#eae2d5] bg-cover flex justify-center items-center rounded-xl border-[2px] border-[#776B5D]">
-              <p className=''>السَّلَامُ عَلَيْكُمْ</p>
+              <p className='text-4xl'>السَّلَامُ عَلَيْكُمْ</p>
              
             </div>
             <div className="h-16 justify-center">
