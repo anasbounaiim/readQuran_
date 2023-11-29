@@ -92,7 +92,7 @@ const PrayerCarousel = () => {
           {selectedGroupName ? (
             <div className="mt-4 w-[1000px] h-96 font-thin ">
               
-              <ul className="list-disc flex flex-col justify-center items-center pl-4 h-72 w-full rounded-xl border-[2px] border-[#776B5D] my-16">
+              <ul className="list-disc flex flex-col justify-center items-center pl-4 h-72 w-full rounded-xl bg-[#eae2d5] bg-cover bg-[url('../public/bg-ayats.png')] border-[2px] border-[#776B5D] my-16">
                 {currentPrayers.map((prayer, index) => (
                   <li key={index} className="m-7 list-none text-2xl leading-10 text-center">
                     <strong>{prayer.text}</strong> - {prayer.disc} <br />

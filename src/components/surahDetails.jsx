@@ -46,7 +46,7 @@ const SurahDetail = ({ surahNumber }) => {
 {
   surahNumber === null ? (
     <div className='flex justify-center items-center h-full w-full'>
-    <p className='  text-5xl font-custom2 text-center leading-[4.9rem]'> السَّلَامُ عَلَيْكُمْ يُمْكِنُكُم اخْتِيَار السُّورَةَ مِنْ الْقَائِمَة الْمَوْجُودَةَ عَلَى الْيَمِينِ 
+    <p className='  text-4xl font-custom2 text-center leading-[4.9rem]'> السَّلَامُ عَلَيْكُمْ يُمْكِنُكُم اخْتِيَار السُّورَةَ مِنْ الْقَائِمَة الْمَوْجُودَةَ عَلَى الْيَمِينِ 
 </p>
     </div>
   ) : null
