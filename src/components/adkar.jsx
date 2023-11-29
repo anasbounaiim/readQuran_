@@ -43,12 +43,11 @@ const PrayerCarousel = () => {
 
   return (
     <div className="mx-auto p-4 text-black">
-      
       {loading ? (
         <p>Loading...</p>
       ) : (
         <div>
-          <ul className='flex flex-row-reverse gap-4 justify-center text-2xl  '>
+          <ul className='flex flex-row-reverse gap-4 justify-center text-2xl'>
             {apiData.map((prayerGroup) => (
               <li
                 key={prayerGroup.name}
@@ -62,9 +61,8 @@ const PrayerCarousel = () => {
             ))}
           </ul>
 
-          {selectedGroupName && (
+          {selectedGroupName ? (
             <div className="mt-4 w-[1000px] h-96 bg-green-400">
-             
               <ul className="list-disc flex justify-center items-center pl-4 h-72 w-full bg-red-500">
                 {currentPrayers.map((prayer, index) => (
                   <li key={index} className="m-7 list-none text-2xl leading-10">
@@ -97,6 +95,11 @@ const PrayerCarousel = () => {
                 </button>
               </div>
             </div>
+          ) : (
+            <div className="mt-4 w-[1000px] h-96 bg-green-400 flex justify-center items-center">
+              <p>السَّلَامُ عَلَيْكُمْ</p>
+            </div>
+            
           )}
         </div>
       )}
