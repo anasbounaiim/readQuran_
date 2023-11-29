@@ -78,7 +78,7 @@ const PrayerCarousel = () => {
             {apiData.map((prayerGroup) => (
               <li
                 key={prayerGroup.name}
-                className={`w-44  p-3 cursor-pointer flex flex-row-reverse justify-center gap-3 border-[1.7px] border-[#776B5D] rounded-xl font-medium  ${
+                className={`w-44 p-3 cursor-pointer flex flex-row-reverse justify-center gap-3 border-[2px] border-[#776B5D] rounded-xl font-medium  ${
                   selectedGroupName === prayerGroup.name ? 'font-bold bg-[#776B5D] text-[#EBE3D5]' : ''
                 }`}
                 onClick={() => handleGroupNameClick(prayerGroup.name)}
