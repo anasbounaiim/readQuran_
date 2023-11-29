@@ -94,7 +94,7 @@ const PrayerCarousel = () => {
               
               <ul className="list-disc flex flex-col justify-center items-center pl-4 h-72 w-full rounded-xl bg-[#eae2d5] bg-cover bg-[url('../public/bg-ayats.png')] border-[2px] border-[#776B5D] my-16">
                 {currentPrayers.map((prayer, index) => (
-                  <li key={index} className="m-7 list-none text-2xl leading-10 text-center">
+                  <li key={index} className="m-7 list-none text-2xl leading-[3rem] text-center">
                     <strong>{prayer.text}</strong> - {prayer.disc} <br />
                   </li>
                 ))}
@@ -129,10 +129,15 @@ const PrayerCarousel = () => {
               </div>
             </div>
           ) : (
-            <div className="mt-4 w-[1000px] h-72  flex justify-center items-center rounded-xl border-[2px] border-[#776B5D]">
+            <div>
+            <div className="mt-16 w-[1000px] h-72 bg-[url('../public/bg-ayats.png')] bg-[#eae2d5] bg-cover flex justify-center items-center rounded-xl border-[2px] border-[#776B5D]">
               <p className=''>السَّلَامُ عَلَيْكُمْ</p>
+             
             </div>
-            
+            <div className="h-16 justify-center">
+               
+              </div>
+            </div>
           )}
         </div>
       )}
