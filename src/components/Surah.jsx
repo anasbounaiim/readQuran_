@@ -41,10 +41,9 @@ const Surah = () => {
             </div>
 
 
-    <div className='flex float-right w-full h-screen bg-[#F3EEEA] gap-11 pt-[2rem] pb-28 px-28'>
+    <div className='flex float-right w-full h-screen bg-[#F3EEEA] gap-11 pt-[2rem] pb-28 px-28 flex-col-reverse lg:flex-row'>
     <div className=' w-full h-full overflow-hidden '>
     <SurahDetail surahNumber={selectedSurah}/>
-
     </div>
     {loading ? (
       <p>Loading...</p>
