@@ -91,18 +91,21 @@ const PrayerCarousel = () => {
 
           {selectedGroupName ? (
             <div className="mt-4 w-[1000px] h-96 font-thin ">
+          
               
-              <ul className="list-disc flex flex-col justify-center items-center pl-4 h-72 w-full rounded-xl bg-[#eae2d5] bg-cover bg-[url('../public/bg-ayats.png')] border-[2px] border-[#776B5D] my-16">
+              <ul className="list-disc flex flex-col justify-center items-center pl-4 h-72 w-full rounded-xl bg-[#eae2d5] bg-cover bg-[url('../public/bg-ayats.png')] border-[2px] border-[#776B5D] mt-16">
                 {currentPrayers.map((prayer, index) => (
                   <li key={index} className="m-7 list-none text-2xl leading-[3rem] text-center">
-                    <strong>{prayer.text}</strong> - {prayer.disc} <br />
+                    <strong>{prayer.text}</strong>   <br /><span className='font-extrabold text-lg'>{prayer.disc}</span>
                   </li>
                 ))}
-                <span className='font-custom1 text-2xl'>{currentPage}/{selectedGroupPrayers.length}</span>
-              </ul>
+               </ul>
+
+               <p className='font-custom1 text-4xl tracking-[4px] font-bold w-full text-center mb-5 '>{currentPage}/{selectedGroupPrayers.length}</p>
+             
               
 
-              <div className="flex mt-4 justify-center">
+              <div className="flex mt-4 justify-center gap-8">
                 <button
                   onClick={() => paginate(currentPage - 1)}
                   className={`px-3 py-1 mx-1 border-[2px] border-[#776B5D] rounded-md bg-none focus:outline-none ${
