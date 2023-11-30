@@ -1,8 +1,11 @@
-import Surah from "./components/Surah"
 import LoadingSpinner from "./components/Loading"
+
+import Surah from "./components/Surah"
 import Adan from "./components/Adan"
 import Time from "./components/time"
 import Adkar from "./components/adkar"
+import Tasbih from "./components/Tasbih"
+
 import React, { useState } from 'react';
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
 
@@ -29,6 +32,29 @@ function App() {
 
         <div className="w-full h-full flex justify-center p-12  font-custom2 text-right bg-[#F3EEEA]">
           <Adkar/>
+
+        </div>
+        <div className="bg-[#776B5D]   h-full bg-[url('../public/bg-adan.png')] bg-no-repeat bg-contain ">
+
+         <h1 className="text-6xl text-center p-10  text-[#eae2d5] font-custom2 ">تَسْبِيحْ </h1>
+
+         <div className="flex justify-center gap-16 my-8">
+         <Tasbih Duaa="سبحان الله"/>
+         <Tasbih Duaa="الحمدلله"/>
+         <Tasbih Duaa="أستغفر الله"/>
+         </div>
+
+         <div className="flex justify-center gap-16 my-8">
+         <Tasbih Duaa="لا حول ولا قوة إلا بالله"/>
+         <Tasbih Duaa="اللهم صل وسلم وبارك على سيدنا محمد"/>
+         <Tasbih Duaa="سبحان الله وبحمده سبحان الله العظيم"/>
+         </div>
+
+         <div className="flex justify-center gap-16 my-8">
+         <Tasbih Duaa="أستغفر الله الذى لا إله إلا هو الحى القيوم وأتوب إليه" />
+         <Tasbih Duaa="سبحان الله والحمد لله ولا إله إلا الله والله أكبر" />
+         <Tasbih Duaa="اللهمَّ إنك عفوٌّ تُحبُّ العفوَ فاعفُ عنِّي" />
+         </div>
 
         </div>
 
