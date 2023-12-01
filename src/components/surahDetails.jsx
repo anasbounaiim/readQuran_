@@ -29,13 +29,13 @@ const SurahDetail = ({ surahNumber }) => {
 
   let c= 0
   return (
-    <div className=" w-full h-full bg-[#eae2d5] text-[#776B5D] border-[#B0A695] bg-[url('../public/bg-ayats.png')] border-[2px] text-justify font-medium px-12 py-7 overflow-y-auto rounded-xl flex">
+    <div className=" w-full px-3 h-[600px] xl:h-full bg-[#eae2d5] text-[#776B5D] border-[#B0A695] bg-[url('../public/bg-ayats.png')] border-[2px] text-justify font-medium  lg:px-12 lg:py-7 overflow-y-auto rounded-xl flex">
       {loading ? (
         <p>Loading Surah data...</p>
       ) : (
-        <div className='text-end  justify-center items-center h-fit animate__animated animate__fadeIn'>
+        <div className='text-end pt-5 justify-center items-center h-fit animate__animated animate__fadeIn'>
           {surahData.map((ayah) => (
-            <span key={ayah.number} className='text-2xl  leading-[3.4rem] font-custom2'>
+            <span key={ayah.number} className='text-2xl   leading-[3.4rem] font-custom2'>
                {ayah.text} <strong className='px-3 font-custom1 text-3xl'> ({c=c+1})</strong>
             </span>
           ))}

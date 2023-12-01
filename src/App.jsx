@@ -30,27 +30,27 @@ function App() {
         <Time/>
         </div>
 
-        <div className="w-full h-full flex justify-center p-12  font-custom2 text-right bg-[#F3EEEA]">
+        <div className="w-full xl:h-full h-[1300px]   flex justify-center p-12  font-custom2 text-right bg-[#F3EEEA]">
           <Adkar/>
 
         </div>
         <div className="bg-[#776B5D]   h-full bg-[url('../public/bg-adan.png')] bg-no-repeat bg-contain ">
 
-         <h1 className="text-6xl text-center p-10  text-[#eae2d5] font-custom2 ">تَسْبِيحْ </h1>
+         <h1 className="text-6xl text-center p-10 pt-24  text-[#eae2d5] font-custom2 ">تَسْبِيحْ </h1>
 
-         <div className="flex justify-center gap-16 my-8">
+         <div className="flex justify-center gap-20 my-10 flex-col items-center xl:flex-row">
          <Tasbih Duaa="سبحان الله"/>
          <Tasbih Duaa="الحمدلله"/>
          <Tasbih Duaa="أستغفر الله"/>
          </div>
 
-         <div className="flex justify-center gap-16 my-8">
+         <div className="flex justify-center gap-20 my-10 flex-col items-center xl:flex-row">
          <Tasbih Duaa="لا حول ولا قوة إلا بالله"/>
          <Tasbih Duaa="اللهم صل وسلم وبارك على سيدنا محمد"/>
          <Tasbih Duaa="سبحان الله وبحمده سبحان الله العظيم"/>
          </div>
 
-         <div className="flex justify-center gap-16 my-8">
+         <div className="flex justify-center gap-20 my-10 flex-col items-center xl:flex-row">
          <Tasbih Duaa="أستغفر الله الذى لا إله إلا هو الحى القيوم وأتوب إليه" />
          <Tasbih Duaa="سبحان الله والحمد لله ولا إله إلا الله والله أكبر" />
          <Tasbih Duaa="اللهمَّ إنك عفوٌّ تُحبُّ العفوَ فاعفُ عنِّي" />

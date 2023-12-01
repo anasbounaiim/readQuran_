@@ -68,17 +68,17 @@ const PrayerCarousel = () => {
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
-    <div className="mx-auto p-4 text-[#776B5D]">
+    <div className="mx-auto text-[#776B5D] w-full ">
       <h1 className='text-6xl text-center mb-10 mt-7'>الأَذْكار</h1>
       {loading ? (
         <p>Loading...</p>
       ) : (
         <div>
-          <ul className='flex flex-row-reverse gap-4 justify-center text-2xl'>
+          <ul className='flex flex-col items-center xl:flex-row-reverse gap-4 justify-center text-2xl'>
             {apiData.map((prayerGroup) => (
               <li
                 key={prayerGroup.name}
-                className={`w-44 p-3 cursor-pointer flex flex-row-reverse justify-center gap-3 border-[2px] border-[#776B5D] rounded-xl font-medium  ${
+                className={`xl:w-44 w-56 p-3 cursor-pointer flex flex-row-reverse justify-center gap-3 border-[2px] border-[#776B5D] rounded-xl font-medium  ${
                   selectedGroupName === prayerGroup.name ? 'font-bold bg-[#776B5D] text-[#EBE3D5]' : ''
                 }`}
                 onClick={() => handleGroupNameClick(prayerGroup.name)}
@@ -90,22 +90,23 @@ const PrayerCarousel = () => {
           </ul>
 
           {selectedGroupName ? (
-            <div className="mt-4 w-[1000px] h-96 font-thin ">
+            <div className="mt-4 w-full font-thin ">
           
               
-              <ul className="list-disc flex flex-col justify-center items-center pl-4 h-72 w-full rounded-xl bg-[#eae2d5] bg-cover bg-[url('../public/bg-ayats.png')] border-[2px] border-[#776B5D] mt-16">
+              <ul className="list-disc flex justify-center items-center  xl:h-[400px] h-[600px] overflow-y-scroll xl:w-[1000px] xl:m-auto w-[320px]  rounded-xl bg-[#eae2d5]  xl:bg-cover bg-[url('../public/bg-ayats.png')] border-[2px] border-[#776B5D] ">
                 {currentPrayers.map((prayer, index) => (
-                  <li key={index} className="m-7 list-none text-2xl leading-[3rem] text-center">
+                  <li key={index} className="m-7 list-none text-2xl xl:text-[1.8rem] xl:leading-[4rem] leading-[3rem] text-center">
                     <strong>{prayer.text}</strong>   <br /><span className='font-extrabold text-lg'>{prayer.disc}</span>
                   </li>
                 ))}
                </ul>
 
-               <p className='font-custom1 text-4xl tracking-[4px] font-bold w-full text-center mb-5 '>{currentPage}/{selectedGroupPrayers.length}</p>
+               
              
-              
 
-              <div className="flex mt-4 justify-center gap-8">
+              <div className="flex flex-col justify-center gap-8">
+              <p className='font-custom1 text-4xl tracking-[4px] font-bold w-full text-center  '>{currentPage}/{selectedGroupPrayers.length}</p>
+              <div className='flex justify-center items-center'>
                 <button
                   onClick={() => paginate(currentPage - 1)}
                   className={`px-3 py-1 mx-1 border-[2px] border-[#776B5D] rounded-md bg-none focus:outline-none ${
@@ -129,11 +130,12 @@ const PrayerCarousel = () => {
                   <MdOutlineKeyboardArrowRight className='text-2xl' />
 
                 </button>
+                </div>
               </div>
             </div>
           ) : (
             <div>
-            <div className="mt-16 w-[1000px] h-72 bg-[url('../public/bg-ayats.png')] bg-[#eae2d5] bg-cover flex justify-center items-center rounded-xl border-[2px] border-[#776B5D]">
+            <div className="xl:mt-4  flex justify-center items-center  xl:h-[400px] h-[600px] overflow-y-scroll xl:w-[1000px] xl:m-auto w-[320px]  rounded-xl bg-[#eae2d5]  xl:bg-cover bg-[url('../public/bg-ayats.png')] border-[2px] border-[#776B5D]">
               <p className='text-4xl'>السَّلَامُ عَلَيْكُمْ</p>
              
             </div>
