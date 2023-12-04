@@ -5,6 +5,7 @@ import Adan from "./components/Adan"
 import Time from "./components/time"
 import Adkar from "./components/adkar"
 import Tasbih from "./components/Tasbih"
+import AsmaaAllah from "./components/asmaaAllah"
 
 import React, { useState } from 'react';
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
@@ -23,6 +24,7 @@ function App() {
         <LoadingSpinner /> // Display the LoadingSpinner when isLoading is true
       ) : (
         <>
+
         <Surah />
         
         <div className="bg-[#776B5D] bg-[url('../public/bg-adan.png')] bg-no-repeat ">
@@ -56,6 +58,14 @@ function App() {
          <Tasbih Duaa="اللهمَّ إنك عفوٌّ تُحبُّ العفوَ فاعفُ عنِّي" />
          </div>
 
+        </div>
+
+        <div className="w-full xl:h-full h-[1000px]   p-12  font-custom2 text-right bg-[#F3EEEA]">
+        <h1 className="text-6xl text-center p-10 pt-11  text-[#776B5D] font-custom2 ">أسماء الله الحسنى</h1>
+        <div className="flex justify-center items-center  text-[#776B5D]">
+
+        <AsmaaAllah/>
+        </div>
         </div>
 
         <footer className="w-full p-2 flex gap-6 justify-center bg-[#776B5D]">

@@ -29,7 +29,7 @@ const SurahDetail = ({ surahNumber }) => {
 
   let c= 0
   return (
-    <div className=" w-full px-3 h-[600px] xl:h-full bg-[#eae2d5] text-[#776B5D] border-[#B0A695] bg-[url('../public/bg-ayats.png')] border-[2px] text-justify font-medium  lg:px-12 lg:py-7 overflow-y-auto rounded-xl flex">
+    <div className="slide-in-left w-full px-3 h-[600px] xl:h-full bg-[#eae2d5] text-[#776B5D] border-[#B0A695] bg-[url('../public/bg-ayats.png')] border-[2px] text-justify font-medium  lg:px-12 lg:py-7 overflow-y-auto rounded-xl flex">
       {loading ? (
         <p>Loading Surah data...</p>
       ) : (
