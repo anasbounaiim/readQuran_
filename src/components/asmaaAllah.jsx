@@ -25,9 +25,9 @@ const AsmaaAllah = () => {
       {loading ? (
         <p>Loading...</p>
       ) : (
-        <div className='text-center px-48 grid xl:grid-cols-9 xl:h-full h-[700px] xl:overflow-auto overflow-y-scroll text-2xl'>
+        <div className='text-center xl:px-48 grid xl:grid-cols-9 xl:h-full h-[700px] xl:overflow-auto overflow-y-scroll text-2xl'>
           {asmaaData.map((item) => (
-            <div className='m-4 p-4 rounded-lg bg-[#eae2d5] hover:bg-[#ebe0d0] hover:duration-100 cursor-pointer  border border-[#776B5D] flex justify-center items-center flex-col' key={item.number}>
+            <div className='m-4 p-4 rounded-lg bg-[#eae2d5] hover:bg-[#ebe0d0] hover:duration-100  cursor-pointer  border border-[#776B5D] flex justify-center items-center flex-col' key={item.number}>
               <strong>{item.name}</strong> {/*  ({item.transliteration}): {item.en.meaning} */}
             </div>
           ))}
