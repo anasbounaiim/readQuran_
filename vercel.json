@@ -1,0 +1,23 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "package.json",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/"
+        }
+    ],
+    "env": {
+        "EXAMPLE_ENV_VARIABLE": "value"
+    },
+    "build": {
+        "env": {
+            "BUILD_ENV_VARIABLE": "value"
+        }
+    }
+}
