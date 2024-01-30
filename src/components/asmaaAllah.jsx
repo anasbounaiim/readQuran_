@@ -7,7 +7,7 @@ const AsmaaAllah = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://api.aladhan.com/v1/asmaAlHusna');
+        const response = await fetch('https://api.aladhan.com/v1/asmaAlHusna');
         const data = await response.json();
         setAsmaaData(data.data);
         setLoading(false);
